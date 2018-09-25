@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Your custom size defind by references, can be writted in anywhere, any module, any values/*.xml, for example: -->
+    <dimen name="ds120">@dimen/dp_54</dimen>
+    <dimen name="topbar_height">@dimen/dp_56</dimen>
+
+    <!-- dp and sp values, must be defind in this file! -->
+    <!-- view size,you can add if there is no one -->
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_23">23dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_54">54dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_85">85dp</dimen>
+    <dimen name="dp_87">87dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_106">106dp</dimen>
+    <dimen name="dp_126.5">126.5dp</dimen>
+    <dimen name="dp_147">147dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_197">197dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_210">210dp</dimen>
+    <dimen name="dp_500">500dp</dimen>
+
+    <!-- font size,you can add if there is no one -->
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+</resources>

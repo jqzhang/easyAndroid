@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#F9F8FA</color>
+    <color name="colorNavigationBarText">#7143EE</color>
+    <color name="app_theme">#5588FF</color>
+
+
+    <color name="progress">#5588FF</color>
+    <color name="cont_a">#565656</color>
+    <color name="line">#D7D7D7</color>
+    <color name="white">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="toast_bg">#8d000000</color>
+    <color name="toast_content">@color/white</color>
+    <color name="action_bar_bg">#F9F8FA</color>
+
+
+
+    <color name="base_c_a">#282828</color>
+    <color name="base_c_b">#F1F1F1</color>
+
+</resources>

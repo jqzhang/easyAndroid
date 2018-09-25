@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A2A8FF</color>
+    <color name="colorPrimaryDark">#A2A8FF</color>
+    <color name="colorAccent">#A2A8FF</color>
+    <color name="action_bar_bg">@color/white</color>
+    <color name="app_theme">#A2A8FF</color>
+
+    <!--App的 文字内容，例如我的页面的 Item -->
+    <color name="c_1">#1F495E</color>
+    <!--禁 状态下字，例如Tab-->
+    <color name="c_2">#BDBDBD</color>
+    <!--背景色 例如：Tab背景-->
+    <color name="c_3">#FCFCFC</color>
+    <color name="c_7">#8D9092</color>
+    <!--登录页面背景-->
+    <!--背景-->
+
+    <color name="white">#ffffff</color>
+
+    <color name="color_ability_distribution_text">#7228D1</color>
+
+</resources>

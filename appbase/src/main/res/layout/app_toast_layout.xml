@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/toast_bg"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img_toast"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/toast_warning" />
+
+        <com.brothers.base.ui.widget.AppTextView
+            android:id="@+id/text_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_toast"
+            android:textColor="@color/toast_content"
+            android:textSize="17sp"
+            tools:text="电话号码为空" />
+    </RelativeLayout>
+
+</RelativeLayout>

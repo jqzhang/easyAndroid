@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdvImg"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_90"
+        android:layout_alignParentLeft="true"
+        app:roundedCornerRadius="@dimen/dp_2" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@id/sdvImg"
+        android:orientation="vertical">
+
+        <com.brothers.base.ui.widget.AppTextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/c_1"
+            android:textSize="15sp" />
+
+        <com.brothers.base.ui.widget.AppTextView
+            android:id="@+id/tvSumary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/c_2"
+            android:textSize="13sp" />
+    </LinearLayout>
+</RelativeLayout>

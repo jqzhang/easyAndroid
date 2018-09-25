@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_500"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_conner_white_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.brothers.base.ui.widget.AppTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:textColor="@color/cont_a"
+            android:textSize="@dimen/sp_16"
+            tools:text="其他经营者信息" />
+
+        <com.brothers.base.ui.widget.AppTextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:maxLines="30"
+            android:minHeight="@dimen/dp_60"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            tools:text="经营者姓名" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/line" />
+
+        <com.brothers.base.ui.widget.AppButton
+            android:id="@+id/btnIKnow"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="我知道了"
+            android:textSize="@dimen/sp_15"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llTowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.brothers.base.ui.widget.AppButton
+                android:id="@+id/btnCancel"
+                style="@style/AppButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_35"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textSize="@dimen/sp_15" />
+
+            <com.brothers.base.ui.widget.AppButton
+                android:id="@+id/btnConfirm"
+                style="@style/AppButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_35"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/confirm"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

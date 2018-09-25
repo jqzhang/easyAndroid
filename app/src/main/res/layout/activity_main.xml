@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.brothers.base.ui.tablayout.CommonTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_3"
+        app:tl_iconHeight="@dimen/dp_25"
+        app:tl_iconWidth="@dimen/dp_25"
+        app:tl_indicator_color="@color/c_1"
+        app:tl_indicator_height="0dp"
+        app:tl_textSelectColor="@color/c_1"
+        app:tl_textUnselectColor="@color/c_2"
+        app:tl_textsize="@dimen/sp_12"
+        app:tl_underline_height="0dp" />
+
+
+    <FrameLayout
+        android:id="@+id/tabFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabLayout" />
+
+</RelativeLayout>

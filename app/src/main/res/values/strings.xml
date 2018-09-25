@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EasyAndroid</string>
+    <string name="exit_app_tip">是否退出应用?</string>
+    <string name="read_write_storage_permission">请打开读写存储卡权限</string>
+    <string name="cookbook">菜谱</string>
+    <string name="input_phone_number">请输手机号</string>
+    <string name="send_sms_code">发送验证码</string>
+    <string name="seconds">秒</string>
+
+    <string name="register_success">注册成功</string>
+    <string name="sure">确定</string>
+
+    <string name="need_permission_message">需要获取%1$s权限，点击设置</string>
+    <string name="permission_display_camera">相机</string>
+
+</resources>

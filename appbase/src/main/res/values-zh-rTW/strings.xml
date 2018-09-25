@@ -1,0 +1,11 @@
+<resources>
+    <string name="tips">提示</string>
+    <string name="confirm">確認</string>
+    <string name="cancel">取消</string>
+    <string name="i_know">我知道了</string>
+    <string name="net_error">網絡不見了</string>
+    <string name="parse_data_error">數據解析失敗</string>
+    <string name="net_error_retry">別擔心，來試試看刷新頁面吧～</string>
+    <string name="no_data">未獲取到更多信息</string>
+    <string name="refresh">刷新</string>
+</resources>

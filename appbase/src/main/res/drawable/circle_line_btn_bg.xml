@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--点击后-->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@android:color/white" />
+                    <corners android:radius="@dimen/dp_100" />
+                    <stroke android:width="@dimen/dp_2" android:color="@color/base_c_b" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!--默认-->
+    <item android:state_pressed="false">
+        <layer-list>
+            <item >
+                <shape>
+                    <solid android:color="@android:color/white" />
+                    <corners android:radius="@dimen/dp_100" />
+                    <stroke android:width="@dimen/dp_2" android:color="@color/app_theme" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

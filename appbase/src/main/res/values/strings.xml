@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppBase</string>
+    <string name="tips">提示</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="i_know">我知道了</string>
+    <string name="net_error">网络不见了</string>
+    <string name="parse_data_error">数据解析失败</string>
+    <string name="net_error_retry">别担心，来试试看刷新页面吧～</string>
+    <string name="no_data">未获取到更多信息</string>
+    <string name="refresh">刷新</string>
+</resources>

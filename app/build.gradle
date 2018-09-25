@@ -1,0 +1,120 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.brothers.peten"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.06"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            // 显示Log
+            versionNameSuffix "-debug"
+            buildConfigField "String", "HOST", "\"http://apicloud.mob.com/\""
+            buildConfigField "String", "MOB_API_KEY", "\"25dcddbb80cbf\""
+            buildConfigField "String", "WX_APP_KEY", "\"wx6f2d5e24d4480181\""
+            buildConfigField "String", "WX_PAY_URL", "\"https://wxpay.wxutil.com/pub_v2/app/app_pay.php\""
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+//            signingConfig signingConfigs.debug
+        }
+        release {
+            // 不显示Log
+            buildConfigField "String", "HOST", "\"http://apicloud.mob.com/\""
+            buildConfigField "String", "MOB_API_KEY", "\"25dcddbb80cbf\""
+            buildConfigField "String", "WX_APP_KEY", "\"wx6f2d5e24d4480181\""
+            buildConfigField "String", "WX_PAY_URL", "\"https://wxpay.wxutil.com/pub_v2/app/app_pay.php\""
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+
+            // 移除无用的resource文件
+            shrinkResources false
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "EasyAndroid-V${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                }
+            }
+        }
+    }
+    //渠道Flavors，配置不同风格的app,友盟渠道统计时用到
+    flavorDimensions "default"
+    productFlavors {
+        offical {
+            dimension "default"
+            minSdkVersion 22
+            targetSdkVersion 27
+            versionCode 1
+            versionName '1.02'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    productFlavors.all {
+//        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '28.0.2'
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+//    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    // 替换成最新版本, 需要注意的是api
+    // 要与compiler匹配使用，均使用最新版可以保证兼容
+    implementation 'com.alibaba:arouter-api:1.3.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+    annotationProcessor 'com.alibaba:arouter-annotation:1implementation.0.4'
+    // Facebook Fresco
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.android.support:multidex:1.0.2'
+    api 'com.facebook.fresco:imagepipeline-okhttp3:1.5.0'
+    // butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation project(path: ':appcommon')
+    implementation project(':appbase')
+    // Bugly
+    api 'com.tencent.bugly:crashreport:latest.release'
+    // Umeng
+    api 'com.umeng.sdk:common:1.5.0'
+    api 'com.umeng.sdk:analytics:7.5.0'
+    implementation 'top.zibin:Luban:1.1.8'
+    api 'com.bigkoo:ConvenientBanner:2.1.4'
+
+    // RichEditor
+    compile 'jp.wasabeef:richeditor-android:1.2.2'
+}

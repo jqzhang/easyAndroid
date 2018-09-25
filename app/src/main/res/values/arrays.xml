@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TAB_TITLE" translatable="false">
+        <item>首页</item>
+        <item>分享</item>
+        <item>收藏</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="TAB_ICON_NORMAL" translatable="false">
+        <item>btn_home_normal</item>
+        <item>btn_share_normal</item>
+        <item>btn_favorite_normal</item>
+        <item>btn_my_normal</item>
+    </string-array>
+
+    <string-array name="TAB_ICON_SELECTED" translatable="false">
+        <item>btn_home_selected</item>
+        <item>btn_share_selected</item>
+        <item>btn_favorite_selected</item>
+        <item>btn_my_selected</item>
+    </string-array>
+
+</resources>
